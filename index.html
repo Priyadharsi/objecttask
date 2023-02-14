@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objecttask</title>
+</head>
+<body>
+    
+        <input type="text" placeholder="Enter propertyinput" id="propertyInpt"><br><br>
+        <input type="text" placeholder="Enter valueinput" id="valueInpt"><br><br>
+        <button id="btn">click</button><br><br>
+    
+    <script>
+        let btn = document.getElementById("btn");
+        let obj={};
+        
+        function user(){
+            let propertyInpt,valueInpt;
+            let property=document.getElementById("propertyInpt");
+            let values=document.getElementById("valueInpt");
+            obj[property.value]=values.value;
+            console.log(obj);
+
+        }
+    btn.addEventListener("click",user);
+    </script>
+</body>
+</html>
